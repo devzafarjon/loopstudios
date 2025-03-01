@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alata';
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    padding-top: 64px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+nav ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+nav ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    display: inline-block;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+
+.bg-text {
+    display: flex;
+    height: 278px;
+    width: 650px;
+    border: 2px solid #fff;
+    margin-top: 130px;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 70px;
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+.main-items {
+    margin-top: 130px;
+    position: relative;
+}
+
+.main-text {
+    position: absolute;
+    width: 541px;
+    height: 317px;
+    color: #000;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.main-text h3 {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 96px 0px 25px 96px;
+    text-transform: uppercase;
+}
+
+.main-text p {
+    margin-left: 96px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 49.94%;
+}
